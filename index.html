@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ciclos y m&eacute;todos 2</title>
+    <link type="text/css" href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="centra-div">
+        <h1>Reserva de Horas</h1>
+        <form onsubmit="return validaFormulario();">
+            <table class="centra-tabla">
+                <tr>
+                    <td>Rut:</td>
+                    <td><input type="text" placeholder="12345678-9" id="rut" /></td>
+                </tr>
+                <tr>
+                    <td>Nombres:</td>
+                    <td><input type="text" id="nombres" /></td>
+                </tr>
+                <tr>
+                    <td>Apellidos:</td>
+                    <td><input type="text" id="apellidos" /></td>
+                </tr>
+                <tr>
+                    <td>Edad:</td>
+                    <td><input type="text" id="edad" /></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" id="email" /></td>
+                </tr>
+                <tr>
+                    <td>Especialidad:</td>
+                    <td><select name="select" id="selectEspecialidad">
+                        <option value="dental">Dental</option>
+                        <option value="traumatologia" selected>Traumatologia</option>
+                        <option value="radiologia">Radiologia</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Fecha:</td>
+                    <td><input id="fecha" placeholder="11-11-1111"/></td>
+                </tr>
+                <tr>
+                    <td>Hora:</td>
+                    <td><select name="select" id="selectHora">
+                        <option value="08.00">08.00</option>
+                        <option value="08.30" selected>08.30</option>
+                        <option value="09.00">09.00</option>
+                    </select></td>
+                </tr>
+            </table>
+
+            <br />
+
+            
+            <button id="reservar">Reservar</button>
+
+        </form>
+
+    </div>
+
+    <script type="text/javaScript" src="assets/js/script.js"></script>
+</body>
+</html>
